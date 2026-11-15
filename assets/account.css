@@ -1,0 +1,141 @@
+/* The WooCommerce shortcode remains the single source of all private data and actions. */
+body.woocommerce-account main.site-main:has(#ss-account){width:100%;max-width:none;margin:0;padding:0}
+body.woocommerce-account main:has(#ss-account)>.page-header{display:none}
+#ss-account{--ink:#1e1e1b;--muted:#605e57;--line:#e2dfd7;--paper:#f6f5f1;--hot:#ff930e;--ring:#965100;--gap:clamp(14px,2vw,25px);direction:rtl;width:100%;max-width:1220px;margin:auto;padding:clamp(24px,4vw,55px) clamp(16px,3.9vw,56px) clamp(40px,5.5vw,74px);color:var(--ink);font:400 16px/1.7 PeydaFaNumWeb,Tahoma,sans-serif;text-align:start}
+#ss-account,#ss-account *,#ss-account *::before,#ss-account *::after{box-sizing:border-box}
+#ss-account :is(h1,h2,h3,h4,p,ul,fieldset){margin:0}
+#ss-account :is(h1,h2,h3,h4,button,input,select,textarea){font-family:inherit}
+#ss-account .ssa-icon{display:inline-block;flex:none;vertical-align:middle;fill:none;stroke:currentColor}
+#ss-account a{color:inherit;text-underline-offset:4px}
+#ss-account :is(a,button,input,select,textarea,[tabindex]):focus-visible{outline:2px solid var(--ring);outline-offset:3px}
+#ss-account :is(.ssa-head,.ssa-sectionhead,.ssa-orderline,.ssa-support,.ssa-shop,.ssa-textlink,.ssa-back){display:flex;align-items:center;gap:9px}
+#ss-account .ssa-head{justify-content:space-between;gap:16px;padding:0 0 clamp(16px,2vw,24px);margin:0 0 var(--gap);border-bottom:1px solid var(--line)}
+#ss-account .ssa-kicker,#ss-account .ssa-eyebrow{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted)}
+#ss-account .ssa-kicker::before{content:"";width:22px;height:3px;border-radius:3px;background:var(--hot)}
+#ss-account h1{margin:4px 0 0;color:var(--ink);font-size:clamp(29px,4vw,48px);line-height:1.3;font-weight:800;letter-spacing:-.025em}
+#ss-account h2{font-size:clamp(21px,2vw,29px);line-height:1.45;font-weight:750;color:inherit}
+#ss-account h3{font-size:clamp(18px,2vw,22px);line-height:1.5;color:inherit}
+#ss-account .ssa-shop{flex:none;min-height:44px;padding:7px 14px;border:1px solid var(--line);border-radius:99px;text-decoration:none;font-weight:650;font-size:14px;background:white}
+#ss-account .ssa-shop:hover,#ss-account .ssa-shortcut:hover{border-color:#bfae94;background:#fcf9f2}
+#ss-account .ssa-auth{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.84fr);align-items:stretch;gap:var(--gap)}
+#ss-account :is(.ssa-formbox,.ssa-order,.ssa-nav,.woocommerce-MyAccount-content:not(:has(.ssa-dash))){border:1px solid var(--line);border-radius:19px;background:#fff}
+#ss-account .ssa-formbox{min-width:0;padding:clamp(20px,3.3vw,44px)}
+#ss-account .ssa-formbox>.woocommerce>:is(h2,h3){margin-bottom:18px}
+#ss-account .ssa-pass,#ss-account .ssa-welcome{position:relative;isolation:isolate;overflow:hidden;border-radius:19px;background:#242420;color:#fff}
+#ss-account .ssa-pass{min-height:345px;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(23px,3vw,40px)}
+#ss-account .ssa-pass::before,#ss-account .ssa-welcome-art{content:"";pointer-events:none;position:absolute;z-index:-1;width:clamp(150px,20vw,270px);aspect-ratio:1;left:-44px;top:-65px;border:1px solid #696654;border-radius:50%;box-shadow:0 0 0 11px #242420,0 0 0 12px #555345,0 0 0 25px #242420,0 0 0 26px #4f4d40,0 0 0 41px #242420,0 0 0 42px #49483d,0 0 0 59px #242420,0 0 0 60px #414137,0 0 0 80px #242420,0 0 0 81px #3d3d35}
+#ss-account .ssa-passmark{display:flex;align-items:center;align-self:flex-end;gap:8px;color:#f7b654;font:700 10px/1.5 Arial,sans-serif;letter-spacing:.17em}
+#ss-account .ssa-passmark i{width:18px;height:9px;background:repeating-linear-gradient(115deg,#ffa629 0 3px,transparent 3px 6px)}
+#ss-account .ssa-passcopy{max-width:315px;padding:40px 0 25px}
+#ss-account .ssa-passcopy small,#ss-account .ssa-welcome .ssa-eyebrow{color:#ffc274;font-size:13px}
+#ss-account .ssa-passcopy h2{font-size:clamp(31px,3.5vw,47px);color:#fff;margin:3px 0}
+#ss-account .ssa-passcopy p,#ss-account .ssa-welcome p{color:#e1e0d9;font-size:15px}
+#ss-account .ssa-passfoot{border-top:1px solid #515148;padding-top:13px;display:flex;justify-content:space-between;align-items:center;color:#c4c3bb;font-size:12px}
+#ss-account .ssa-passfoot b{font:700 12px Arial;letter-spacing:.15em}
+#ss-account .ssa-support{flex-wrap:wrap;gap:6px 10px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:var(--gap);padding-top:12px}
+#ss-account .ssa-support a,#ss-account .ssa-back,#ss-account .ssa-textlink,#ss-account .ssa-sectionhead a{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:var(--ink);font-weight:650;text-decoration:none;font-size:14px}
+#ss-account :is(.ssa-textlink,.ssa-back,.ssa-sectionhead a,.ssa-support a):hover{text-decoration:underline}
+#ss-account .ssa-back{margin-top:10px}
+#ss-account .ssa-support a{margin-inline-start:auto}
+#ss-account>.woocommerce{width:100%;max-width:none;margin-inline:0}
+#ss-account.ssa-member>.woocommerce:has(.ssa-nav){display:grid;grid-template-columns:minmax(175px,.29fr) minmax(0,1fr);align-items:start;gap:var(--gap)}
+#ss-account.ssa-member>.woocommerce::before,#ss-account.ssa-member>.woocommerce::after{display:none}
+#ss-account.ssa-member>.woocommerce>:not(.ssa-nav,.woocommerce-MyAccount-content){grid-column:1/-1}
+#ss-account .woocommerce-notices-wrapper:empty{display:none}
+#ss-account .ssa-nav{width:auto;float:none;min-width:0;padding:12px}
+#ss-account .ssa-nav-title{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:13px;font-weight:600;padding:9px 10px 15px}
+#ss-account .ssa-nav ul{padding:0;list-style:none;display:grid;gap:3px}
+#ss-account .ssa-nav li{margin:0;padding:0;list-style:none}
+#ss-account .ssa-nav li a{display:flex;align-items:center;gap:11px;min-height:45px;padding:9px 12px;border-radius:10px;font-size:15px;font-weight:550;color:var(--ink);text-decoration:none}
+#ss-account .ssa-nav li a:hover{background:var(--paper)}
+#ss-account .ssa-nav li a[aria-current]{background:#fff0d7;color:#633400;font-weight:750}
+#ss-account .ssa-nav li.woocommerce-MyAccount-navigation-link--customer-logout{border-top:1px solid var(--line);margin-top:7px;padding-top:7px}
+#ss-account .woocommerce-MyAccount-content{float:none;width:auto;min-width:0;overflow-wrap:anywhere}
+#ss-account .woocommerce-MyAccount-content:not(:has(.ssa-dash)){padding:clamp(18px,2.6vw,32px)}
+#ss-account .ssa-dash{display:grid;gap:16px}
+#ss-account .ssa-welcome{padding:clamp(22px,2.8vw,37px)}
+#ss-account .ssa-welcome-art{top:-90px;left:-48px;width:175px}
+#ss-account .ssa-welcome h2{margin:4px 0;font-size:clamp(25px,3vw,37px);color:#fff}
+#ss-account .ssa-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#ss-account .ssa-shortcut{position:relative;display:flex;flex-direction:column;gap:1px;min-width:0;padding:clamp(13px,1.6vw,22px);border:1px solid var(--line);border-radius:15px;color:var(--ink);text-decoration:none;background:white}
+#ss-account :is(.ssa-shortcut,.ssa-empty)>i{display:grid;place-items:center;width:41px;height:41px;border-radius:12px;margin:0 0 12px;background:#f5eee1;color:#795018}
+#ss-account .ssa-shortcut>span,#ss-account .ssa-empty p,#ss-account .ssa-orderline small{display:block;color:var(--muted);font-size:13px}
+#ss-account .ssa-shortcut>.ssa-icon{position:absolute;top:16px;left:13px;color:#726e64}
+#ss-account .ssa-order{padding:clamp(15px,2vw,25px)}
+#ss-account .ssa-sectionhead{justify-content:space-between;gap:8px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+#ss-account .ssa-empty,#ss-account .ssa-orderline{display:flex;align-items:center;flex-wrap:wrap;gap:10px 15px;padding:18px 0 1px}
+#ss-account .ssa-empty>i{margin:0;background:var(--paper)}
+#ss-account .ssa-empty .ssa-textlink,#ss-account .ssa-orderline .ssa-textlink{margin-inline-start:auto}
+#ss-account .ssa-status{display:inline-flex;align-items:center;color:#65430d;background:#fff0ce;border-radius:99px;padding:3px 11px;font-size:13px}
+#ss-account .woocommerce :is(.button,button.button,input.button){display:inline-flex;align-items:center;justify-content:center;min-height:44px;max-width:100%;padding:9px 17px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);font:650 15px/1.55 PeydaFaNumWeb,Tahoma,sans-serif;text-decoration:none;text-align:center;white-space:normal}
+#ss-account .woocommerce .button:hover{background:#eae7e0}
+#ss-account .woocommerce :is(button.button[type="submit"],input.button[type="submit"]){background:var(--hot);border-color:var(--hot);color:#211b13}
+#ss-account .woocommerce :is(button.button[type="submit"],input.button[type="submit"]):hover{background:#ffab3b;border-color:#ffab3b}
+#ss-account .woocommerce .button:disabled{opacity:.55;cursor:not-allowed}
+#ss-account .woocommerce form:is(.login,.register,.lost_reset_password,.edit-account){margin:0;padding:0;border:0;border-radius:0}
+#ss-account .woocommerce form .form-row{padding:0;margin:0 0 15px;min-width:0}
+#ss-account .woocommerce form .form-row label{display:block;margin:0 0 5px;line-height:1.65;font-weight:600;font-size:15px;color:var(--ink)}
+#ss-account .woocommerce label .required{color:#953c26}
+#ss-account .woocommerce :is(input.input-text,textarea,select,.select2-selection--single){background:#fff;border:1px solid #c9c7be;border-radius:9px;box-shadow:none;color:var(--ink);width:100%;min-height:46px;max-width:100%;padding:9px 12px;font:400 16px/1.6 PeydaFaNumWeb,Tahoma,sans-serif}
+#ss-account .woocommerce :is(input.input-text,textarea,select):focus{border-color:var(--ring)}
+#ss-account .woocommerce input:is([type="email"],[type="tel"],[type="password"]){direction:ltr;text-align:start}
+#ss-account .woocommerce :is(.password-input,.woocommerce-input-wrapper){position:relative;display:block}
+#ss-account .woocommerce .password-input input{padding-right:46px;padding-left:46px}
+#ss-account .woocommerce .password-input .show-password-input{display:grid;place-items:center;position:absolute;inset-inline-start:auto;inset-inline-end:2px;top:50%;transform:translateY(-50%);width:42px;height:42px;border:0;border-radius:8px;background:transparent;color:var(--ink);margin:0;padding:0}
+#ss-account .woocommerce .password-input .show-password-input::after{margin:0}
+#ss-account .woocommerce .login p:has([name="rememberme"]){display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#ss-account .woocommerce .login .woocommerce-form-login__rememberme{float:none;display:inline-flex;align-items:center;gap:7px;min-height:36px;margin:0;color:var(--muted);font-weight:500}
+#ss-account .woocommerce input[type="checkbox"]{width:17px;height:17px;margin:0;accent-color:#292820}
+#ss-account .woocommerce .login button[name="login"]{float:none;width:100%;min-height:47px;margin:0}
+#ss-account .woocommerce .lost_password a{display:inline-flex;align-items:center;min-height:44px;color:#754400;font-weight:600;font-size:14px}
+#ss-account .woocommerce .lost_reset_password>p:first-child{color:var(--muted);margin-bottom:18px}
+#ss-account .woocommerce .lost_reset_password .form-row{float:none;width:100%}
+#ss-account .woocommerce .lost_reset_password button{width:100%}
+#ss-account .woocommerce :is(.woocommerce-error,.woocommerce-info,.woocommerce-message,.wc-block-components-notice-banner){display:block;list-style:none;position:relative;margin:0 0 16px;padding:13px 15px;border:1px solid var(--line);border-inline-start:3px solid #9e6c2b;background:#f8f6f0;color:var(--ink);border-radius:10px;line-height:1.7;font-size:15px;word-break:normal;overflow-wrap:anywhere}
+#ss-account .woocommerce :is(.woocommerce-error,.woocommerce-message,.woocommerce-info)::before{display:none}
+#ss-account .woocommerce .woocommerce-error{border-inline-start-color:#ab392e;background:#fff5f4}
+#ss-account .woocommerce .woocommerce-message{border-inline-start-color:#4b724a;background:#f3f8f1}
+#ss-account .woocommerce :is(.woocommerce-info,.woocommerce-message) .button{float:none;margin:3px 0;margin-inline-end:10px;background:#fff}
+#ss-account .woocommerce .woocommerce-MyAccount-content>p{margin:0 0 16px;color:var(--muted)}
+#ss-account .woocommerce :is(fieldset,.woocommerce-address-fields__field-wrapper){min-width:0}
+#ss-account .woocommerce fieldset{clear:both;border:1px solid var(--line);padding:15px 18px 3px;border-radius:12px;margin:17px 0}
+#ss-account .woocommerce legend{padding:0 8px;font-weight:750;font-size:16px}
+#ss-account .woocommerce form :is(em,.description,small,.optional){font-size:13px;color:var(--muted);font-style:normal;line-height:1.6}
+#ss-account .woocommerce .select2-container{width:100%!important;max-width:100%}
+#ss-account .woocommerce .select2-selection--single{display:flex;align-items:center;padding:0 12px}
+#ss-account .woocommerce .select2-selection--single .select2-selection__rendered{color:inherit;padding:0;padding-inline-end:17px}
+#ss-account .woocommerce .select2-selection--single .select2-selection__arrow{height:100%;inset-inline-end:8px;inset-inline-start:auto}
+body.woocommerce-account .select2-dropdown{border:1px solid #c9c7be;border-radius:9px;overflow:hidden;font-family:PeydaFaNumWeb,Tahoma,sans-serif}
+body.woocommerce-account .select2-results__option--highlighted[aria-selected]{background:#39372e;color:#fff}
+#ss-account .woocommerce .woocommerce-Addresses,#ss-account .woocommerce .woocommerce-columns--addresses{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+#ss-account .woocommerce :is(.woocommerce-Addresses,.woocommerce-columns--addresses)::before,#ss-account .woocommerce :is(.woocommerce-Addresses,.woocommerce-columns--addresses)::after{display:none}
+#ss-account .woocommerce :is(.woocommerce-Address,.woocommerce-column--billing-address,.woocommerce-column--shipping-address){width:auto;min-width:0;float:none;border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--paper)}
+#ss-account .woocommerce .woocommerce-Address-title{display:flex;align-items:flex-start;flex-direction:column;margin-bottom:7px}
+#ss-account .woocommerce .woocommerce-Address-title :is(h2,h3){float:none;margin:0;font-size:19px}
+#ss-account .woocommerce .woocommerce-Address-title .edit{display:inline-flex;align-items:center;min-height:44px;color:#754400;float:none;font-size:14px}
+#ss-account .woocommerce address{margin:0;padding:0;border:0;line-height:1.85;font-style:normal;color:var(--muted)}
+#ss-account .woocommerce :is(.woocommerce-address-fields,.woocommerce-order-details,.woocommerce-customer-details){margin:16px 0;min-width:0}
+#ss-account .woocommerce table.shop_table{width:100%;margin:12px 0;border:1px solid var(--line);border-spacing:0;border-collapse:separate;border-radius:10px;background:white;overflow:hidden;font-size:14px;line-height:1.65}
+#ss-account .woocommerce .shop_table :is(th,td){vertical-align:middle;padding:11px;text-align:start;color:var(--ink);border:0;border-bottom:1px solid var(--line);background:transparent}
+#ss-account .woocommerce .shop_table thead th{background:var(--paper);font-weight:700;color:var(--muted)}
+#ss-account .woocommerce .shop_table tr:last-child>:is(td,th){border-bottom:0}
+#ss-account .woocommerce .shop_table .button{font-size:13px;margin:2px}
+#ss-account .woocommerce mark{background:#fff0ce;color:#67420b;border-radius:5px;padding:1px 5px}
+#ss-account .woocommerce-order-downloads{margin:15px 0}
+#ss-account .woocommerce .woocommerce-pagination{display:flex;gap:8px;flex-wrap:wrap}
+#ss-account .woocommerce form .woocommerce-invalid input{border-color:#a43e34}
+#ss-account .woocommerce .woocommerce-password-strength,#ss-account .woocommerce .woocommerce-password-hint{border-radius:8px;margin-top:5px;padding:6px 10px}
+@media(max-width:900px){#ss-account.ssa-member>.woocommerce:has(.ssa-nav){grid-template-columns:minmax(0,1fr)}
+#ss-account .ssa-nav{padding:8px}#ss-account .ssa-nav-title{display:none}#ss-account .ssa-nav ul{grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}
+#ss-account .ssa-nav li.woocommerce-MyAccount-navigation-link--customer-logout{border:0;margin:0;padding:0}}
+@media(max-width:700px){#ss-account .ssa-auth{grid-template-columns:minmax(0,1fr)}#ss-account .ssa-pass{min-height:0;padding:19px 21px}#ss-account .ssa-passcopy{padding:0;max-width:85%}#ss-account .ssa-passcopy h2{font-size:26px}#ss-account .ssa-passcopy p{font-size:14px}#ss-account .ssa-passfoot{display:none}#ss-account .ssa-passmark{margin-bottom:3px;font-size:9px}
+#ss-account .ssa-shop{padding:6px 11px}#ss-account .ssa-shop>.ssa-icon:last-child{display:none}}
+@media(max-width:768px){#ss-account .woocommerce .shop_table_responsive{display:block;border:0;background:transparent;overflow:visible}#ss-account .woocommerce .shop_table_responsive tbody{display:grid;gap:10px}
+#ss-account .woocommerce .shop_table_responsive thead{display:none}#ss-account .woocommerce .shop_table_responsive tr{display:block;border:1px solid var(--line);border-radius:10px;padding:7px 12px;background:var(--paper)}
+#ss-account .woocommerce .shop_table_responsive tr td{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;padding:7px 0;text-align:end!important;background:transparent}
+#ss-account .woocommerce .shop_table_responsive tr td::before{float:none;font-weight:600;color:var(--muted)}}
+@media(max-width:520px){#ss-account{padding-inline:14px}#ss-account .ssa-head{gap:8px}#ss-account .ssa-nav ul{grid-template-columns:repeat(2,minmax(0,1fr))}#ss-account .ssa-nav li a{gap:8px;padding:8px;font-size:14px}
+#ss-account .ssa-shortcuts{grid-template-columns:minmax(0,1fr);gap:7px}#ss-account .ssa-shortcut{display:grid;grid-template-columns:39px 1fr 18px;column-gap:12px;padding:11px 13px}#ss-account .ssa-shortcut i{grid-column:1;grid-row:1/3;margin:0;align-self:center;width:37px;height:37px}#ss-account .ssa-shortcut strong,#ss-account .ssa-shortcut span{grid-column:2}#ss-account .ssa-shortcut>.ssa-icon{position:static;grid-column:3;grid-row:1/3;align-self:center}
+#ss-account .ssa-welcome-art{width:100px;top:-60px;left:-55px;opacity:.55}#ss-account .ssa-empty .ssa-textlink{margin-inline-start:0}#ss-account .ssa-support a{margin-inline-start:0}
+#ss-account .woocommerce form :is(.form-row-first,.form-row-last){float:none;width:100%}#ss-account .woocommerce fieldset{padding:12px 11px 2px}
+#ss-account .woocommerce .shop_table :is(td,th){padding:8px}#ss-account .ssa-formbox{padding:20px 16px}}

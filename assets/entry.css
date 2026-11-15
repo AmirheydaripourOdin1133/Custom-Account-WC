@@ -1,0 +1,9 @@
+.elementor-location-header .elementor-menu-cart__toggle:has(>.ssa-entry-link){display:inline-flex;align-items:center;gap:4px;vertical-align:middle;white-space:nowrap}
+.elementor-location-header .elementor-menu-cart__toggle>.ssa-entry-link{display:inline-grid;place-items:center;flex:0 0 auto;width:44px;height:44px;border-radius:12px;border:1px solid #54534c;background:#242420;color:#fff;text-decoration:none}
+.elementor-location-header .ssa-entry-link svg{display:block;width:20px;height:20px;stroke:currentColor;fill:none}
+.elementor-location-header .elementor-menu-cart__toggle>.ssa-entry-link:is(:hover,:focus-visible){color:#1b1a17;background:#ff9a17;outline:2px solid #884900;outline-offset:1px}
+@media(max-width:767px){
+ .elementor-451.elementor-location-header .elementor-element.elementor-element-96cef88:has(.ssa-entry-link){grid-template-columns:94px minmax(0,1fr) 94px}
+ .elementor-451 .elementor-element-5b7ddab{justify-self:start}
+ .elementor-451 .elementor-element-14f7d2b:has(.ssa-entry-link) .elementor-menu-cart__wrapper{width:94px}
+}
